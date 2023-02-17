@@ -1,0 +1,24 @@
+.container {
+  background: #ffffff;
+  max-width: 1080px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+.product-content {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  padding-bottom: 75px;
+}
+.products-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+.shoes-list {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}

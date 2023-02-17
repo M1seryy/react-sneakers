@@ -1,0 +1,101 @@
+.card-wrap {
+  width: 210px;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 40px;
+  padding: 20px 28px 34px 31px;
+  position: relative;
+}
+.card-like-icon {
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  transition: 200ms ease-in-out;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+}
+.card-like-icon:hover {
+  background: #fef0f0;
+}
+.card-like-icon:hover .like-btn {
+  fill: #ff8585;
+  stroke: #ff8585;
+}
+.like-btn {
+  width: 100%;
+  height: 100%;
+  stroke: black;
+  stroke-width: 3px;
+  fill: #fff;
+  transition: 200ms ease-in-out;
+}
+
+.card-img {
+  width: 133px;
+  height: 112px;
+}
+.card-sub-title {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 14px;
+}
+.card-sup-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  flex-direction: column;
+}
+.card-sup-title::before {
+  content: "Price:";
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.card-add-icon {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px solid #f2f2f2;
+  transition: 200ms ease-in-out;
+  position: absolute;
+  right: 28px;
+  bottom: 34px;
+}
+.card-add-icon:hover {
+  background-color: #bdbdbd;
+}
+.card-add-icon:hover .plus-btn * {
+  fill: #fff;
+}
+.plus-btn {
+  width: 100%;
+  height: 100%;
+  transition: 200ms ease-in-out;
+}
+
+.card-add-icon-added {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  border-radius: 7px;
+  background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+  transition: 200ms ease-in-out;
+  position: absolute;
+  right: 28px;
+  bottom: 34px;
+}
+.added-icon {
+  width: 100%;
+  height: 100%;
+  transition: 200ms ease-in-out;
+}
