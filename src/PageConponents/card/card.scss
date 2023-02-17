@@ -1,6 +1,6 @@
 .card-wrap {
   width: 210px;
-  background: #ffffff;
+  background: rgb(246, 246, 246);
   border: 1px solid #f3f3f3;
   border-radius: 40px;
   padding: 20px 28px 34px 31px;
@@ -40,6 +40,8 @@
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 14px;
+  display: inline-block;
+  height: 34px;
 }
 .card-sup-title {
   font-family: "Inter";
