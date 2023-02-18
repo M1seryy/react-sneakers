@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Basket from "../basket/Basket";
 import Card from "../card/Card";
 import "./products.scss";
 
@@ -16,6 +17,7 @@ const Products = () => {
   }, []);
   return (
     <section className="products">
+  
       <div className="container">
         <div className="product-content">
           <h2 className="products-title">Все кроссовки</h2>

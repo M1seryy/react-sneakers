@@ -2,6 +2,7 @@ import React from "react";
 import "./hero.scss";
 import logoText from "../../images/img/text.png";
 import logoSlider from "../../images/img/logo-slider.png";
+import Button from "../button/Button";
 
 const Hero = () => {
   return (
@@ -12,9 +13,7 @@ const Hero = () => {
             <div className="text__side">
               <img src={logoSlider} alt="logo" />
               <img className="logo-text" src={logoText} alt="text" />
-              <button className="btn__slider_buy" type="button">
-                Order
-              </button>
+              <Button title="Order"/>
             </div>
             <div className="bg__side"></div>
           </div>

@@ -5,7 +5,10 @@ import logoShop from "../../images/svg/shop.svg";
 import logoLike from "../../images/svg/like.svg";
 import logoAccount from "../../images/svg/account.svg";
 
-const Header = () => {
+const Header = ({ close, setClose }) => {
+  const onCloseHandler = () => {
+    setClose(!close);
+  };
   return (
     <div className="wrap">
       <header className="header__section">
@@ -22,7 +25,7 @@ const Header = () => {
             </div>
             <div className="header__shop">
               <ul className="header__shop list">
-                <li className="shop-wrap">
+                <li className="shop-wrap" onClick={onCloseHandler}>
                   <img
                     src={logoShop}
                     alt="logo"
