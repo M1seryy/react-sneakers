@@ -34,6 +34,7 @@ body {
   margin-bottom: 30px;
 }
 .cards {
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;

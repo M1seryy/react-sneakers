@@ -17,13 +17,9 @@ const Basket = ({ close, setClose }) => {
         <Plus onClick={closeHandler} className="exit-btn"></Plus>
         <h2 className="basket-title">Orders</h2>
         <div className="cards">
-          {addedArr ? (
-            addedArr.map((item, index) => {
-              return <BasketCards key={index} data={item} />;
-            })
-          ) : (
-            <h1>Empty</h1>
-          )}
+          {addedArr.map((item, index) => {
+            return <BasketCards key={index} data={item} />;
+          })}
         </div>
       </div>
     </div>
