@@ -4,13 +4,18 @@ import shoe from "../../images/img/shoes.png";
 import { ReactComponent as ShoeLike } from "../../images/svg/shoe-like.svg";
 import { ReactComponent as Plus } from "../../images/svg/plus.svg";
 import { ReactComponent as Added } from "../../images/svg/added.svg";
+import { useDispatch, useSelector } from "react-redux";
 
 const Card = ({ data }) => {
   const [added, setAdded] = useState(false);
+  const dispatch = useDispatch();
+  const arr = useSelector((state) => state.basketArr);
+  const setDataToBasket = () => {
+    dispatch({ type: "ADD", payload: data });
+  };
   const addBtn = () => {
     setAdded(!added);
   };
-  console.log(data);
   return (
     <div className="card-wrap">
       <div className="card-like-icon">
@@ -25,7 +30,7 @@ const Card = ({ data }) => {
         </div>
       ) : (
         <div onClick={addBtn} className="card-add-icon">
-          <Plus className="plus-btn"></Plus>
+          <Plus onClick={setDataToBasket} className="plus-btn"></Plus>
         </div>
       )}
     </div>

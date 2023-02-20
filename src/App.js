@@ -7,11 +7,12 @@ import Hero from "./PageConponents/hero/Hero";
 import Products from "./PageConponents/products/Products";
 
 function App() {
-  const [close, setClose] = useState(true);
+  const [close, setClose] = useState(false);
+
   return (
     <>
       <Basket close={close} setClose={setClose} />
-      <Header close={close} setClose={setClose}/>
+      <Header close={close} setClose={setClose} />
       <Hero />
       <Products />
     </>

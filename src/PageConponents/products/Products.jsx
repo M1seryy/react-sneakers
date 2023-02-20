@@ -17,13 +17,12 @@ const Products = () => {
   }, []);
   return (
     <section className="products">
-  
       <div className="container">
         <div className="product-content">
           <h2 className="products-title">Все кроссовки</h2>
           <div className="shoes-list">
-            {data.map((item) => {
-              return <Card data={item} />;
+            {data.map((item, index) => {
+              return <Card key={index} data={item} />;
             })}
           </div>
         </div>

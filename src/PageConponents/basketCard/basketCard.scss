@@ -1,7 +1,7 @@
 .basket-card-wrap {
   width: 325px;
   height: 119px;
-  background: #ffffff;
+  background: rgb(246, 246, 246);
   border: 1px solid #f3f3f3;
   border-radius: 20px;
   position: relative;
@@ -13,12 +13,12 @@
   align-items: center;
 }
 .basket-card-img {
-  min-width: 70px;
-  min-height: 70px;
-  background-image: url("../../images/img/shoes.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  width: 70px;
+  height: 70px;
+  // background-image: url("../../images/img/shoes.png");
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-position: center;
 }
 .details {
   display: flex;
