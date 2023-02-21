@@ -5,6 +5,7 @@
   margin: 0 auto;
 }
 .product-content {
+  position: relative;
   background: #fff;
   width: 100%;
   height: auto;
@@ -22,3 +23,27 @@
   gap: 40px;
   flex-wrap: wrap;
 }
+.search-input {
+  width: 250px;
+  height: 45px;
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 13px 0px 13px 26px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.search-input::placeholder{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+
+}
+
