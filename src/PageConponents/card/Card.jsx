@@ -14,8 +14,8 @@ const Card = ({ data }) => {
   const dispatch = useDispatch();
   const arr = useSelector((state) => state.basketArr);
   const setDataToBasket = () => {
-    dispatch(SET_TO_BASKET(ADD, data));
     axios.post(`https://63ef75c5c59531ccf16fa934.mockapi.io/basket`, data);
+    dispatch(SET_TO_BASKET(ADD, data));
   };
   const addBtn = () => {
     setAdded(!added);

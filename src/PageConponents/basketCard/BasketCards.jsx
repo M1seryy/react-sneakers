@@ -8,12 +8,7 @@ import { DELETE_ITEM } from "../../redux/actions/actions";
 const BasketCards = ({ data, onDeleteFunc }) => {
   const dispatch = useDispatch();
   const reduxArr = useSelector((state) => state.basketArr);
-  // const deleteHandler = (id) => {
-  //   const newArr = reduxArr.filter((obj) => obj.id !== id);
-  //   console.log(newArr, id);
-  //   dispatch(DELETE_ITEM(DELETE, newArr));
-  //   // dispatch({ type: DELETE, payload: newArr });
-  // };
+
   return (
     <div className="basket-card-wrap">
       <img src={data.imageURL} alt="shoe" className="basket-card-img"></img>
@@ -21,7 +16,6 @@ const BasketCards = ({ data, onDeleteFunc }) => {
         <p className="basket-card-sub-title">{data.name}</p>
         <p className="basket-card-sup-title">{data.price}$</p>
       </div>
-      {/* () => deleteHandler(data.id) */}
       <div
         onClick={() => {
           onDeleteFunc(data.id);

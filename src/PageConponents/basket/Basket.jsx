@@ -21,7 +21,7 @@ const Basket = ({ close, setClose, onDelete }) => {
   };
   useEffect(() => {
     getBasket();
-  }, []);
+  }, [close]);
 
   return (
     <div className={close ? "overlay" : "overlay hidden"}>
